@@ -1,0 +1,17 @@
+/* variables.css */
+
+
+  :root {
+    --color-primary-light: #D97373;
+    --color-primary-dark: #340c0c;
+    --color-bg-light: #F2E2DF;
+    --color-bg-features: #A6705D;
+    --color-bg-dark: #340c0c;
+    --color-bg-gray: #5c5856;
+    --color-bg-buttom-section: #F2CA99;
+    --color-text-light: #F2E2DF;
+    --color-text-features: #F2E2DF;
+    --color-text-section: #F2CA99;
+    --color-text-dark: #340c0c;
+    --color-link-hover: #f3d5b7;
+  }
