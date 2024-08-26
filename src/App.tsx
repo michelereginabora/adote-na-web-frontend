@@ -11,7 +11,7 @@ const App: React.FC = () => {
     <Router>
       <div>
         <Routes>
-          <Route path="/" element={<HomePage />} />
+          <Route path="/adote-na-web-frontend" element={<HomePage />} />
           {/* <Route path="/adotar" element={<AdoptionPage getAnimalsUseCase={getAnimalsUseCase} />} /> */}
         </Routes>
       </div>
