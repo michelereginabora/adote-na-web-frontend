@@ -23,7 +23,7 @@ const HeroSection: React.FC = () => {
         </p>
         <div className="flex flex-col md:flex-row gap-4 items-center justify-center">
         <Link
-          to="/adotar"
+          to="/adote-na-web-frontend/emconstrucao"
           className="inline-flex items-center bg-white text-[var(--color-text-dark)] font-bold py-3 px-6 md:px-8 rounded-full shadow-md hover:bg-[var(--color-link-hover)] hover:text-[var(--color-primary-dark)] hover:shadow-xl transition duration-300"
         >
           Match de Quatro Patas
