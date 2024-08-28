@@ -1,10 +1,10 @@
 import React from "react";
-import { FaGithub } from "react-icons/fa"; // Importa o ícone do GitHub
+import { FaGithub } from "react-icons/fa";
 
 const GithubButton: React.FC = () => {
   return (
     <a
-      href="https://github.com/seu-repositorio"
+      href="https://github.com/michelereginabora/adote-na-web-frontend"
       target="_blank"
       rel="noopener noreferrer"
       style={{
@@ -18,7 +18,7 @@ const GithubButton: React.FC = () => {
         fontWeight: "bold",
       }}
     >
-      <FaGithub style={{ marginRight: "8px" }} /> {/* Ícone do GitHub */}
+      <FaGithub style={{ marginRight: "8px" }} />
       Repositório no Github
     </a>
   );
