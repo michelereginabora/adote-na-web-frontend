@@ -16,7 +16,7 @@ O melhor de tudo? Nossa aplicação web oferece uma experiência imersiva e flui
         <h2 className="text-3xl md:text-4xl sm:text-base font-extrabold mb-4 md:mb-6 text-[var(--color-primary-light)]">
           {heading}
         </h2>
-        <p className="text-lg  md:text-xl sm:text-base text-justify text-[var(--color-text-light)] leading-relaxed whitespace-pre-line">
+        <p className="md:text-lg sm:text-base md:text-xl sm:text-base text-justify text-[var(--color-text-light)] leading-relaxed whitespace-pre-line">
           {paragraph}
         </p>
       </div>
