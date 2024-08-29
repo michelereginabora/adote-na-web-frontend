@@ -3,7 +3,7 @@ import React from 'react';
 const Section: React.FC = () => {
   const sectionBackground = "bg-[var(--color-bg-gray)] py-12 sm:py-20";
   const containerClasses = "mx-auto max-w-7xl px-6 lg:px-8";
-  const headerText = "Apoie a causa!";
+  const headerText = "APOIE A CAUSA!";
   const descriptionText = "Junte-se a nós e ajude a encontrar lares amorosos para animais que precisam. Cadastre-se como protetor, ONG ou adotante e faça a diferença.";
   const membershipTitle = "Faça parte da nossa comunidade";
   const membershipDescription = "Ao se cadastrar, você poderá cadastrar animais para adoção, encontrar seu novo amigo e contribuir ou solicitar doações.";
