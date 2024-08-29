@@ -1,22 +1,22 @@
 import React from 'react';
 
 const AboutUs: React.FC = () => {
-  const heading = "Sobre o Projeto";
+  const heading = " Conheca a Adote na Web: Um Web App de Adoção de Animais";
   const paragraph = `
-    Este aplicativo web foi desenvolvido para promover a adoção de animais resgatados, conectando futuros adotantes com pets que precisam de um lar. Como um projeto de código aberto, nossa plataforma busca não apenas facilitar a adoção responsável, mas também criar uma comunidade engajada e colaborativa.
+    Este aplicativo web foi projetado para transformar o processo de adoção de animais resgatados, conectando futuros adotantes com pets que precisam de um lar. Como um projeto de código aberto, nossa plataforma não só facilita a adoção responsável, mas também cria uma comunidade engajada e colaborativa, onde todos podem contribuir para um mundo melhor para os animais.
 
-    Através de nossa plataforma, você pode explorar perfis de animais resgatados, usar nosso sistema de correspondência para encontrar o pet ideal e interagir diretamente com abrigos e organizações.
+Na nossa plataforma, você pode explorar perfis detalhados de animais resgatados, usar nosso sistema de correspondência inteligente para encontrar o pet ideal e interagir diretamente com abrigos e organizações de proteção animal. 
 
-    Convidamos você a fazer parte desta missão! Contribua com o projeto, ajude a melhorar a plataforma e compartilhe com sua rede. Juntos, podemos oferecer uma nova chance a muitos animais e promover a adoção consciente.
-  `;
+O melhor de tudo? Nossa aplicação web oferece uma experiência imersiva e fluida semelhante a um aplicativo, sem a necessidade de instalação (PWA). Assim, você pode acessar todas as funcionalidades de maneira rápida e prática, onde quer que esteja.
+ `;
 
   return (
     <section className="bg-[var(--color-bg-dark)] p-6 md:p-8 shadow-md flex flex-col md:flex-row items-center space-y-6 md:space-y-0 md:space-x-6">
       <div className="flex-1">
-        <h2 className="text-3xl md:text-4xl font-extrabold mb-4 md:mb-6 text-[var(--color-primary-light)]">
+        <h2 className="text-3xl md:text-4xl sm:text-base font-extrabold mb-4 md:mb-6 text-[var(--color-primary-light)]">
           {heading}
         </h2>
-        <p className="text-lg md:text-xl text-[var(--color-text-light)] leading-relaxed whitespace-pre-line">
+        <p className="text-lg  md:text-xl sm:text-base text-justify text-[var(--color-text-light)] leading-relaxed whitespace-pre-line">
           {paragraph}
         </p>
       </div>
@@ -24,7 +24,7 @@ const AboutUs: React.FC = () => {
         <img
             src="assets/dogandcats.png"
             alt="About Us"
-            className="w-full h-auto object-cover rounded-lg"
+            className="w-[95%] h-auto object-cover rounded-lg md:ml-4"
         />
         </div>
     </section>

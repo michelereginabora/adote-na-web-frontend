@@ -4,10 +4,10 @@ const Section: React.FC = () => {
   const sectionBackground = "bg-[var(--color-bg-gray)] py-12 sm:py-20";
   const containerClasses = "mx-auto max-w-7xl px-6 lg:px-8";
   const headerText = "APOIE A CAUSA!";
-  const descriptionText = "Junte-se a nós e ajude a encontrar lares amorosos para animais que precisam. Cadastre-se como protetor, ONG ou adotante e faça a diferença.";
+  const descriptionText = "Junte-se a nós e ajude a desenvolver o web app que irá encontrar lares amorosos para animais que precisam. Faça a diferença!";
   const membershipTitle = "Faça parte da nossa comunidade";
-  const membershipDescription = "Ao se cadastrar, você poderá cadastrar animais para adoção, encontrar seu novo amigo e contribuir ou solicitar doações.";
-  const includedTitle = "Benefícios de se cadastrar";
+  const membershipDescription = "Aqui será possível cadastrar animais para adoção, encontrar um novo amigo e contribuir ou solicitar doações.";
+  const includedTitle = "Benefícios da plataforma";
   const features = [
     "Cadastro de animais para adoção",
     "Acesso a recursos exclusivos",
@@ -17,7 +17,6 @@ const Section: React.FC = () => {
     "Perfil personalizado para ONGs e protetores"
   ];
 
-  const buttonText = "Cadastre-se";
 
   return (
     <div className={sectionBackground}>
@@ -54,18 +53,6 @@ const Section: React.FC = () => {
                 </li>
               ))}
             </ul>
-          </div>
-          <div className="p-2 lg:flex lg:justify-center">
-          <div className="text-center ring-1 ring-inset ring-gray-900/5 lg:flex lg:flex-col lg:justify-center lg:py-16">
-              <div className="mx-auto max-w-xs px-8">
-                <a
-                  href="#"
-                  className="block w-full rounded-md bg-[var(--color-bg-buttom-section)]  px-3 py-2 text-center text-sm font-semibold text-[var(--color-text-dark)] shadow-sm hover:bg-[var(--color-link-hover)]  focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2"
-                >
-                  {buttonText}
-                </a>
-              </div>
-            </div>
           </div>
         </div>
       </div>
