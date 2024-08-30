@@ -22,7 +22,7 @@ const Section: React.FC = () => {
     <div className={sectionBackground}>
       <div className={containerClasses}>
         <div className="mx-auto max-w-2xl sm:text-center">
-          <h2 className="text-3xl font-bold tracking-tight text-[var(--color-text-dark)] sm:text-4xl">
+          <h2 className="text-3xl font-bold tracking-tight text-[var(--color-text-section)] sm:text-4xl">
             {headerText}
           </h2>
           <p className="mt-6 text-lg leading-8 text-[var(--color-text-light)]">
