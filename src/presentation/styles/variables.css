@@ -16,4 +16,14 @@
     --color-text-section: #F2CA99;
     --color-text-dark: #340c0c;
     --color-link-hover: #f3d5b7; 
+    --font-title: 'Merriweather', serif;
+    --font-text: 'Open Sans', sans-serif;
+  }
+
+  h1, h2, h3, h4, h5, h6 {
+    font-family: var(--font-title);
+  }
+  
+  body, p, span, li, a {
+    font-family: var(--font-text);
   }
