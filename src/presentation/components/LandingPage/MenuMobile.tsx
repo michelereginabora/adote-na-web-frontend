@@ -10,7 +10,7 @@ const MenuMobile: React.FC<{ toggleMenu: () => void }> = ({ toggleMenu }) => {
       {/* Menu */}
       <div className="relative z-50 w-64 bg-[var(--color-bg-dark)] shadow-lg p-6">
         <div className="flex items-center justify-between mb-4">
-          <img className="h-8 w-auto" src="src/assets/patas.png" alt="ONG de Animais" />
+          <img className="h-8 w-auto" src="assets/pata.webp" alt="ONG de Animais" />
           <button
             type="button"
             className="rounded-md p-2 inline-flex items-center justify-center text-gray-400 hover:text-gray-500 hover:bg-gray-100"

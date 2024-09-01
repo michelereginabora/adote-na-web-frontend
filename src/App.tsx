@@ -13,7 +13,7 @@ const App: React.FC = () => {
       <div>
         <Routes>
           <Route path="/" element={<HomePage />} />
-          <Route path="/emconstrucao" element={<PageUnderConstruction backgroundImageSrc={'assets/cat.png'} />} />
+          <Route path="/emconstrucao" element={<PageUnderConstruction backgroundImageSrc={'assets/cat.webp'} />} />
           {/* <Route path="/adotar" element={<AdoptionPage getAnimalsUseCase={getAnimalsUseCase} />} /> */}
         </Routes>
       </div>
