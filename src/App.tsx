@@ -13,7 +13,7 @@ const App: React.FC = () => {
       <div>
         <Routes>
           <Route path="/adote-na-web-frontend" element={<HomePage />} />
-          <Route path="/adote-na-web-frontend/emconstrucao" element={<PageUnderConstruction backgroundImageSrc={'assets/cat.png'} />} />
+          <Route path="/adote-na-web-frontend/emconstrucao" element={<PageUnderConstruction backgroundImageSrc={'assets/cat.webp'} />} />
           {/* <Route path="/adotar" element={<AdoptionPage getAnimalsUseCase={getAnimalsUseCase} />} /> */}
         </Routes>
       </div>

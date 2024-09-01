@@ -1,16 +1,15 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
-import { FaCode } from 'react-icons/fa'
-import { FaPaw } from 'react-icons/fa'; 
+import { FaPaw, FaCode } from 'react-icons/fa'; 
 
 const HeroSection: React.FC = () => {
   return (
     <div className="relative bg-gradient-to-r from-[var(--color-primary-light)] to-[var(--color-primary-dark)] text-[var(--color-text-light)] shadow-lg py-20 md:py-32 z-40">
       <div
-        className="absolute inset-0 bg-cover bg-center"
+        className="absolute inset-0 bg-cover bg-center bg-no-repeat"
         style={{
-          backgroundImage: "url('https://www.petz.com.br/blog/wp-content/uploads/2020/01/vira-lata-caramelo-cao.jpg')",
-          opacity: 0.5
+          backgroundImage: "url('assets/vira-lata-caramelo-cao.webp')",
+          opacity: 0.5,
         }}
       />
       <div className="absolute inset-0 bg-black opacity-40" />
@@ -33,10 +32,10 @@ const HeroSection: React.FC = () => {
           <Link
             to="https://github.com/michelereginabora/adote-na-web-frontend"
             className="flex items-center text-[var(--color-text-light)] font-normal hover:text-[var(--color-link-hover)] transition duration-300"
-            >
+          >
             Contribua com o Projeto
             <FaCode className="ml-2 text-xl" />
-            </Link>
+          </Link>
         </div>
       </div>
     </div>

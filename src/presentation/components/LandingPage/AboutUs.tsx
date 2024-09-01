@@ -22,7 +22,7 @@ O melhor de tudo? Nossa aplicação web oferece uma experiência imersiva e flui
       </div>
       <div className="flex-shrink-0 w-full md:w-1/2 overflow-hidden">
         <img
-            src="assets/dogandcats.png"
+            src="assets/dogandcats.webp"
             alt="About Us"
             className="w-[95%] h-auto object-cover rounded-lg md:ml-4"
         />
