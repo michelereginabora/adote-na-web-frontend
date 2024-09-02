@@ -6,7 +6,6 @@ import PageUnderConstruction from './presentation/pages/PageUnderConstruction';
 
 
 const App: React.FC = () => {
-  // const getAnimalsUseCase = createGetAnimalsUseCase();
 
   return (
     <Router>
@@ -14,7 +13,6 @@ const App: React.FC = () => {
         <Routes>
           <Route path="/" element={<HomePage />} />
           <Route path="/emconstrucao" element={<PageUnderConstruction backgroundImageSrc={'assets/cat.webp'} />} />
-          {/* <Route path="/adotar" element={<AdoptionPage getAnimalsUseCase={getAnimalsUseCase} />} /> */}
         </Routes>
       </div>
     </Router>
