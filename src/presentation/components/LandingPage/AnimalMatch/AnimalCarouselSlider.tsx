@@ -32,7 +32,7 @@ const AnimalCarouselSlider: React.FC<AnimalCarouselSliderProps> = ({ animals }) 
 
   return (
     <div className="w-full md:w-2/3 relative flex flex-col">
-      <div className="relative flex items-center overflow-hidden rounded-lg mr-8">
+      <div className="relative flex items-center overflow-hidden rounded-lg lg:mr-8 ">
         <div className="relative flex overflow-hidden w-full">
           <div
             className="flex transition-transform duration-1000 ease-in-out"
