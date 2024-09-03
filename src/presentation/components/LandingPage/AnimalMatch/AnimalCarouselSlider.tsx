@@ -1,4 +1,4 @@
-import React, { useState, useEffect } from 'react';
+import React, { useState, useEffect, useCallback } from 'react';
 import { AnimalLandingPage } from '../../../../domain/entities/Animal';
 import AnimalCard from '../../Matcher/AnimalCard';
 
@@ -10,16 +10,25 @@ const AnimalCarouselSlider: React.FC<AnimalCarouselSliderProps> = ({ animals }) 
   const [currentIndex, setCurrentIndex] = useState(0);
   const [isAutoPlay, setIsAutoPlay] = useState(true);
 
+  const extendedAnimals = [...animals.slice(-1), ...animals, ...animals.slice(0, 1)];
+
+  const handleTransitionEnd = useCallback(() => {
+    if (currentIndex === extendedAnimals.length - 1) {
+      setCurrentIndex(1);
+    } else if (currentIndex === 0) {
+      setCurrentIndex(extendedAnimals.length - 2);
+    }
+  }, [currentIndex, extendedAnimals.length]);
+
   useEffect(() => {
     let interval: number;
     if (isAutoPlay) {
       interval = window.setInterval(() => {
-        setCurrentIndex((prevIndex) => (prevIndex + 1) % animals.length);
+        setCurrentIndex((prevIndex) => (prevIndex + 1) % extendedAnimals.length);
       }, 5000);
     }
     return () => window.clearInterval(interval);
-  }, [animals.length, isAutoPlay]);
-
+  }, [extendedAnimals.length, isAutoPlay]);
 
   return (
     <div className="w-full md:w-2/3 relative flex flex-col">
@@ -27,12 +36,16 @@ const AnimalCarouselSlider: React.FC<AnimalCarouselSliderProps> = ({ animals }) 
         <div className="relative flex overflow-hidden w-full">
           <div
             className="flex transition-transform duration-1000 ease-in-out"
-            style={{ transform: `translateX(-${currentIndex * 100}%)`, width: `${animals.length * 100}%` }}
+            style={{
+              transform: `translateX(-${(currentIndex * 100) / extendedAnimals.length}%)`,
+              width: `${extendedAnimals.length * 100}%`
+            }}
+            onTransitionEnd={handleTransitionEnd}
           >
-            {animals.map((animal) => (
+            {extendedAnimals.map((animal, index) => (
               <div
-                key={animal.id}
-                className="flex-shrink-0 lg:w-[60%] md:w-[80%] h-full flex justify-center items-center transition-all duration-2000"
+                key={`${animal.id}-${index}`}
+                className="flex-shrink-0 w-[60%] h-full flex justify-center items-center transition-all duration-1500"
               >
                 <AnimalCard animal={animal} />
               </div>
