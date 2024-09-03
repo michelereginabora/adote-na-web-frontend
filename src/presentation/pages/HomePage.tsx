@@ -7,6 +7,7 @@ import Section from '../components/LandingPage/Section';
 import Statistic from '../components/LandingPage/Statistic';
 import { createGetAnimalsUseCase } from '../../main/factories/UseCaseFactory';
 import AnimalSection from '../components/LandingPage/AnimalSection';
+import AnimalCarousel from '../components/LandingPage/AnimalMatch/AnimalCarousel';
 
 const HomePage: React.FC = () => {
   const getAnimalsUseCase = createGetAnimalsUseCase();
@@ -23,7 +24,7 @@ const HomePage: React.FC = () => {
         <Features />
       </div>
       <div id="animals">
-        <AnimalSection getAnimalsUseCase={getAnimalsUseCase} />
+        <AnimalCarousel getAnimalsUseCase={getAnimalsUseCase} />
       </div>
       <div id="section">
         <Section />
