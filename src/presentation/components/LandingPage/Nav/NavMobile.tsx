@@ -10,14 +10,14 @@ const NavMobile: React.FC = () => {
     <nav className="space-y-4">
       <Link 
         to="/" 
-        className="block text-base font-medium text-[var(--color-text-light)] hover:bg-[var(--color-link-hover)] p-2 rounded-md"
+        className="block text-base font-medium text-[var(--color-text-light)] hover:text-[var(--color-primary-light)] p-2 rounded-md"
         onClick={toggleMenu}
       >
         Início
       </Link>
       <Link 
         to="/emconstrucao" 
-        className="block text-base font-medium text-[var(--color-text-light)] hover:bg-[var(--color-link-hover)] p-2 rounded-md"
+        className="block text-base font-medium text-[var(--color-text-light)] hover:text-[var(--color-primary-light)] p-2 rounded-md"
         onClick={toggleMenu}
       >
         Adotar
@@ -26,7 +26,7 @@ const NavMobile: React.FC = () => {
         to="about-us" 
         smooth={true} 
         duration={500} 
-        className="block text-base font-medium text-[var(--color-text-light)] hover:bg-[var(--color-link-hover)] p-2 rounded-md"
+        className="block text-base font-medium text-[var(--color-text-light)] hover:text-[var(--color-primary-light)] p-2 rounded-md"
         onClick={toggleMenu}
       >
         Sobre
@@ -35,7 +35,7 @@ const NavMobile: React.FC = () => {
         to="features" 
         smooth={true} 
         duration={500} 
-        className="block text-base font-medium text-[var(--color-text-light)] hover:bg-[var(--color-link-hover)] p-2 rounded-md"
+        className="block text-base font-medium text-[var(--color-text-light)] hover:text-[var(--color-primary-light)] p-2 rounded-md"
         onClick={toggleMenu}
       >
         Funcionalidades
@@ -44,7 +44,7 @@ const NavMobile: React.FC = () => {
         to="section" 
         smooth={true} 
         duration={500} 
-        className="block text-base font-medium text-[var(--color-text-light)] hover:bg-[var(--color-link-hover)] p-2 rounded-md"
+        className="block text-base font-medium text-[var(--color-text-light)] hover:text-[var(--color-primary-light)] p-2 rounded-md"
         onClick={toggleMenu}
       >
         Benefícios

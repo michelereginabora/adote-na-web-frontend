@@ -8,7 +8,7 @@ import NavLinks from './NavLinks';
 
 const Navbar: React.FC = () => {
   return (
-    <nav className="flex items-center justify-between p-6 lg:px-8" aria-label="Global">
+    <nav className="flex items-center justify-between p-6 lg:px-8 animate-fadeIn" aria-label="Global">
       <Logo />
       <MenuButton />
       <NavLinks />
