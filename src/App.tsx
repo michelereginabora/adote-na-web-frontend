@@ -1,12 +1,11 @@
 import React from 'react';
 import { BrowserRouter as Router, Route, Routes } from 'react-router-dom';
-import HomePage from './presentation/pages/HomePage';
+import HomePage from './presentation/pages/LandingPage/HomePage';
 import './index.css'; 
 import PageUnderConstruction from './presentation/pages/PageUnderConstruction';
 
 
 const App: React.FC = () => {
-  // const getAnimalsUseCase = createGetAnimalsUseCase();
 
   return (
     <Router>
@@ -15,7 +14,7 @@ const App: React.FC = () => {
           <Route path="/adote-na-web-frontend" element={<HomePage />} />
           <Route path="/adote-na-web-frontend/emconstrucao" element={<PageUnderConstruction backgroundImageSrc={'assets/cat.webp'} />} />
           {/* <Route path="/adotar" element={<AdoptionPage getAnimalsUseCase={getAnimalsUseCase} />} /> */}
-        </Routes>
+         </Routes>
       </div>
     </Router>
   );

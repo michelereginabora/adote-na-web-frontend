@@ -1,6 +1,6 @@
 # Guia de Contribuição
 
-Obrigado por considerar contribuir para o projeto **Adote na Web**! Este guia destina-se a ajudá-lo a começar e garantir que suas contribuições sejam bem-vindas e eficazes.
+Obrigado por considerar contribuir para o projeto **Adote na Web**! Este guia destina-se a ajudá-lo a começar e garantir que suas contribuições sejam bem-vindas e eficazes. 
 
 ## Como Contribuir
 
@@ -43,7 +43,7 @@ Se você deseja adicionar um recurso, corrigir um bug ou melhorar a documentaç�
 
 4. **Faça suas Alterações**
 
-   Realize as alterações necessárias no código. Certifique-se de seguir as [boas práticas de codificação](#boas-práticas-de-codificação) e manter a consistência com o estilo do projeto.
+   Realize as alterações necessárias no código. Certifique-se de seguir as [boas práticas de codificação](CODINGGUIDELINES.md) e manter a consistência com o estilo do projeto.
 
 5. **Teste suas Alterações**
 

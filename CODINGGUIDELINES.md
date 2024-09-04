@@ -1,7 +1,11 @@
 # Guia de Estilo 
 
 ## Estrutura de Pastas
+<<<<<<< HEAD
 
+=======
+ 
+>>>>>>> 21e86f3dd08408404c38952cd91ed32daea04142
 A estrutura de pastas segue a Clean Architecture, separando a aplicação em camadas distintas:
 
 - **`domain/`**: Contém as regras de negócio centrais da aplicação.

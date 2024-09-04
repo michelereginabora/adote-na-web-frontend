@@ -2,12 +2,18 @@
 
 ## Visão Geral
 
-A **Plataforma Adote na Web** é uma solução que conecta protetores independentes, ONGs e adotantes, promovendo a adoção responsável de animais. Nosso objetivo é criar um ambiente seguro e intuitivo, onde usuários possam facilmente encontrar seus novos companheiros de quatro patas. Este é um projeto open source, e encorajamos a contribuição da comunidade para melhorar e expandir a plataforma.
+A **Plataforma Adote na Web** é uma solução que visa conectar protetores independentes, ONGs e adotantes, facilitando a adoção responsável de animais. Nosso propósito é criar um ambiente seguro e intuitivo, permitindo que os usuários encontrem facilmente seus novos amigos de quatro patas. Este projeto é open source e valorizamos a colaboração da comunidade para aprimorar e expandir continuamente a plataforma.
+
+## Backlog do Projeto
+
+Para acompanhar o progresso e visualizar as tarefas planejadas, acesse nosso backlog de projetos no GitHub: [Backlog do Projeto](https://github.com/users/michelereginabora/projects/12/).
+
 
 ## Tecnologias Utilizadas
 
 - **Frontend:** React, Tailwind CSS, TypeScript
 - **Arquitetura:** Clean Architecture
+- **PWA Support**
 
 ## Funcionalidades Principais
 
