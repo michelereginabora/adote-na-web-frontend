@@ -7,7 +7,7 @@ const NavLinks: React.FC = () => (
     <Link to="/" className="text-sm font-semibold text-[var(--color-text-light)] hover:text-[var(--color-primary-light)] px-4 py-2 rounded-md transition duration-300">
       Início
     </Link>
-    <Link to="/emconstrucao" className="text-sm font-semibold text-[var(--color-text-light)] hover:text-[var(--color-primary-light)] px-4 py-2 rounded-md transition duration-300">
+    <Link to="emconstrucao" className="text-sm font-semibold text-[var(--color-text-light)] hover:text-[var(--color-primary-light)] px-4 py-2 rounded-md transition duration-300">
       Adotar
     </Link>
     <ScrollLink to="about-us" smooth={true} duration={500} className="text-sm font-semibold text-[var(--color-text-light)] hover:text-[var(--color-primary-light)] px-4 py-2 rounded-md transition duration-300">

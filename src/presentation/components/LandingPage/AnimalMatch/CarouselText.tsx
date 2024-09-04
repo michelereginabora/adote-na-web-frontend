@@ -20,7 +20,7 @@ const CarouselText: React.FC = () => {
       </div>
       <div className="mt-8">
         <Link 
-          to="/emconstrucao" 
+          to="emconstrucao" 
           className="bg-white text-[var(--color-primary-light)] font-semibold py-4 px-4 rounded-full hover:bg-[var(--color-link-hover)] transition duration-300 ease-in-out transform hover:scale-105"
         >
           Comece Agora

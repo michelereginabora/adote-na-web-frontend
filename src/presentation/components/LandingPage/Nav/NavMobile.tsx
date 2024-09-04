@@ -16,7 +16,7 @@ const NavMobile: React.FC = () => {
         Início
       </Link>
       <Link 
-        to="/emconstrucao" 
+        to="emconstrucao" 
         className="block text-base font-medium text-[var(--color-text-light)] hover:text-[var(--color-primary-light)] p-2 rounded-md"
         onClick={toggleMenu}
       >
