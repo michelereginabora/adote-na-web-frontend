@@ -25,17 +25,17 @@ const AnimalCarouselSlider: React.FC<AnimalCarouselSliderProps> = ({ animals }) 
     if (isAutoPlay) {
       interval = window.setInterval(() => {
         setCurrentIndex((prevIndex) => (prevIndex + 1) % extendedAnimals.length);
-      }, 5000);
+      }, 3000);
     }
     return () => window.clearInterval(interval);
   }, [extendedAnimals.length, isAutoPlay]);
 
   return (
-    <div className="w-full md:w-2/3 relative flex flex-col">
+    <div className="md:w-2/3 relative flex flex-col">
       <div className="relative flex items-center overflow-hidden rounded-lg w-[95%] ">
         <div className="relative flex overflow-hidden w-full">
           <div
-            className="flex transition-transform duration-1000 ease-in-out"
+            className="flex transition-transform duration-1000 ease-in-out "
             style={{
               transform: `translateX(-${(currentIndex * 100) / extendedAnimals.length}%)`,
               width: `${extendedAnimals.length * 100}%`
@@ -45,7 +45,7 @@ const AnimalCarouselSlider: React.FC<AnimalCarouselSliderProps> = ({ animals }) 
             {extendedAnimals.map((animal, index) => (
               <div
                 key={`${animal.id}-${index}`}
-                className="flex-shrink-0 w-[60%] h-full flex justify-center items-center transition-all duration-1500"
+                className="flex-shrink-0 w-[65%] h-full flex justify-center items-center transition-all duration-1500"
               >
                 <AnimalCard animal={animal} />
               </div>

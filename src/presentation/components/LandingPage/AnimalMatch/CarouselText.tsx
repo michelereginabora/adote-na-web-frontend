@@ -14,7 +14,7 @@ const CarouselText: React.FC = () => {
         <h2 className="text-4xl sm:text-5xl md:text-6xl lg:text-7xl xl:text-8xl font-bold leading-tight">
           Dê um <span className="text-[var(--color-primary-light)]">Match!</span>
         </h2>
-        <p className="text-base sm:text-xl md:text-2xl font-light">
+        <p className="text-base sm:text-xl font-light">
           Ao cadastrar um animal, ele estará disponível para encontrar o amigo perfeito.
         </p>
       </div>
