@@ -28,17 +28,6 @@ export class AnimalApi implements AnimalDataSource {
         location: "Curitiba, PR"
       },
       { 
-        id: "3",
-        name: "Bob",
-        photos: [
-          "https://www.agrosete.com.br/wp-content/uploads/2017/06/Vira-latas-conquistam-coracao-de-brasileiros.jpg"
-        ],
-        species: "dog",
-        gender: "male",
-        description: "Eu sou um companheiro tranquilo. Com outros animais, eu sou bastante amigável. Eu sou inquieto com crianças. Meu nível de energia é baixo.",
-        location: "São Paulo, SP"
-      },
-      { 
         id: "4",
         name: "Belinha",
         photos: [

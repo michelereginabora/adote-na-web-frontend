@@ -1,6 +1,7 @@
-import React, { useState, useEffect, useCallback } from 'react';
+import React, { useState } from 'react';
 import { AnimalLandingPage } from '../../../../domain/entities/Animal';
 import AnimalCard from '../../Matcher/AnimalCard';
+import useSwipe from '../../../hooks/useSwipe';
 
 interface AnimalCarouselSliderProps {
   animals: AnimalLandingPage[];
@@ -8,44 +9,37 @@ interface AnimalCarouselSliderProps {
 
 const AnimalCarouselSliderMobile: React.FC<AnimalCarouselSliderProps> = ({ animals }) => {
   const [currentIndex, setCurrentIndex] = useState(0);
-  const [isAutoPlay] = useState(true);
 
-  const extendedAnimals = [...animals.slice(-1), ...animals, ...animals.slice(0, 1)];
+  const handleSwipeLeft = () => {
+    setCurrentIndex((prevIndex) => Math.min(prevIndex + 1, animals.length - 1));
+  };
 
-  const handleTransitionEnd = useCallback(() => {
-    if (currentIndex === extendedAnimals.length - 1) {
-      setCurrentIndex(1);
-    } else if (currentIndex === 0) {
-      setCurrentIndex(extendedAnimals.length - 2);
-    }
-  }, [currentIndex, extendedAnimals.length]);
+  const handleSwipeRight = () => {
+    setCurrentIndex((prevIndex) => Math.max(prevIndex - 1, 0));
+  };
 
-  useEffect(() => {
-    let interval: number;
-    if (isAutoPlay) {
-      interval = window.setInterval(() => {
-        setCurrentIndex((prevIndex) => (prevIndex + 1) % extendedAnimals.length);
-      }, 3000);
-    }
-    return () => window.clearInterval(interval);
-  }, [extendedAnimals.length, isAutoPlay]);
+  const { handleTouchStart, handleTouchMove, handleTouchEnd } = useSwipe(handleSwipeLeft, handleSwipeRight);
 
   return (
     <div className="relative flex flex-col items-center w-full">
       <div className="relative flex items-center overflow-hidden rounded-lg w-full">
-        <div className="relative flex overflow-hidden w-full">
+        <div
+          className="relative flex overflow-hidden w-full"
+          onTouchStart={handleTouchStart}
+          onTouchMove={handleTouchMove}
+          onTouchEnd={handleTouchEnd}
+        >
           <div
             className="flex transition-transform duration-1000 ease-in-out"
             style={{
-              transform: `translateX(-${(currentIndex * 100) / extendedAnimals.length}%)`,
-              width: `${extendedAnimals.length * 100}%`
+              transform: `translateX(-${(currentIndex * 100) / animals.length}%)`,
+              width: `${animals.length * 100}%`,
             }}
-            onTransitionEnd={handleTransitionEnd}
           >
-            {extendedAnimals.map((animal, index) => (
+            {animals.map((animal, index) => (
               <div
                 key={`${animal.id}-${index}`}
-                className="flex-shrink-0 w-[32%] h-full flex justify-center items-center mx-2 transition-all duration-1500"
+                className="flex-shrink-0 w-[55%] flex justify-center items-center p-2"
               >
                 <AnimalCard animal={animal} />
               </div>
