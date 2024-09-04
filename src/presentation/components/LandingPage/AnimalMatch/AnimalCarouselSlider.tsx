@@ -8,7 +8,7 @@ interface AnimalCarouselSliderProps {
 
 const AnimalCarouselSlider: React.FC<AnimalCarouselSliderProps> = ({ animals }) => {
   const [currentIndex, setCurrentIndex] = useState(0);
-  const [isAutoPlay, setIsAutoPlay] = useState(true);
+  const [isAutoPlay] = useState(true);
 
   const extendedAnimals = [...animals.slice(-1), ...animals, ...animals.slice(0, 1)];
 
