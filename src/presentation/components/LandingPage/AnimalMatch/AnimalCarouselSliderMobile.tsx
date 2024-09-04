@@ -6,7 +6,7 @@ interface AnimalCarouselSliderProps {
   animals: AnimalLandingPage[];
 }
 
-const AnimalCarouselSlider: React.FC<AnimalCarouselSliderProps> = ({ animals }) => {
+const AnimalCarouselSliderMobile: React.FC<AnimalCarouselSliderProps> = ({ animals }) => {
   const [currentIndex, setCurrentIndex] = useState(0);
   const [isAutoPlay, setIsAutoPlay] = useState(true);
 
@@ -31,18 +31,21 @@ const AnimalCarouselSlider: React.FC<AnimalCarouselSliderProps> = ({ animals }) 
   }, [extendedAnimals.length, isAutoPlay]);
 
   return (
-    <div className="md:w-2/3 relative flex flex-col">
-      <div className="relative flex items-center overflow-hidden rounded-lg w-[95%]">
+    <div className="relative flex flex-col items-center w-full">
+      <div className="relative flex items-center overflow-hidden rounded-lg w-full">
         <div className="relative flex overflow-hidden w-full">
           <div
             className="flex transition-transform duration-1000 ease-in-out"
-            style={{ width: '70%', transform: `translateX(-${(currentIndex * 100) / extendedAnimals.length}%)` }}
+            style={{
+              transform: `translateX(-${(currentIndex * 100) / extendedAnimals.length}%)`,
+              width: `${extendedAnimals.length * 100}%`
+            }}
             onTransitionEnd={handleTransitionEnd}
           >
             {extendedAnimals.map((animal, index) => (
               <div
                 key={`${animal.id}-${index}`}
-                className="flex-shrink-0 w-full h-full flex justify-center items-center transition-all duration-1500 -mx-16"
+                className="flex-shrink-0 w-[32%] h-full flex justify-center items-center mx-2 transition-all duration-1500"
               >
                 <AnimalCard animal={animal} />
               </div>
@@ -54,4 +57,4 @@ const AnimalCarouselSlider: React.FC<AnimalCarouselSliderProps> = ({ animals }) 
   );
 };
 
-export default AnimalCarouselSlider;
+export default AnimalCarouselSliderMobile;
