@@ -20,8 +20,8 @@ const FeatureCard: React.FC<{ feature: FeatureItem; index: number }> = ({ featur
   return (
     <div
       ref={elementRef}
-      className={`relative pl-16 transition-opacity duration-1000 ${isVisible ? 'opacity-100 translate-x-0' : 'opacity-0 translate-x-10'}`}
-      style={{ transitionDelay: `${index * 100}ms`}}  // Staggered delay for each item
+      className={`relative pl-16 transition-opacity duration-1000 ${isVisible ? 'opacity-100 translate-x-0' : 'opacity-0 translate-x-5'}`}
+      style={{ transitionDelay: `${index * 100}ms`}} 
     >
       <dt className="text-base font-semibold leading-7 text-[var(--color-text-dark)]">
         <div className="absolute left-0 top-0 flex h-10 w-10 items-center justify-center rounded-lg bg-[var(--color-bg-dark)]">
