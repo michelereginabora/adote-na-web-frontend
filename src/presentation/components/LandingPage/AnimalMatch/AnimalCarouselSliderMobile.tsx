@@ -39,7 +39,7 @@ const AnimalCarouselSliderMobile: React.FC<AnimalCarouselSliderProps> = ({ anima
             {animals.map((animal, index) => (
               <div
                 key={`${animal.id}-${index}`}
-                className="flex-shrink-0 w-[55%] flex justify-center items-center p-2"
+                className="flex-shrink-0 w-[55%] flex justify-center items-center px-2"
               >
                 <AnimalCard animal={animal} />
               </div>
