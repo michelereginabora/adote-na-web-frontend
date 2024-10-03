@@ -44,7 +44,7 @@ Para acompanhar o progresso e visualizar as tarefas planejadas, acesse nosso bac
 
 ## Contribua
 
-Este projeto é open source e está aberto a contribuições da comunidade. Se você deseja contribuir, por favor, consulte o [guia de contribuição](CONTRIBUTING.md) para mais detalhes sobre como começar.
+Este projeto é open source e está aberto a contribuições da comunidade. Se você deseja contribuir, por favor, leia nosso [Código de Conduta](CODE_OF_CONDUCT.md) e consulte o [guia de contribuição](CONTRIBUTING.md) para mais detalhes sobre como começar.
 
 ## Licença
 
